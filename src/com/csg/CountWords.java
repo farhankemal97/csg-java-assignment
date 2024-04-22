@@ -8,7 +8,7 @@ public class CountWords {
     public static int countWordsStartsWithCharacterM (List<String> words){
         int result = 0;
         for(String word : words){
-            if(word.startsWith("M") || word.startsWith("m")){
+            if(word.toLowerCase().startsWith("m")){
                 result++;
             }
         }
@@ -37,7 +37,7 @@ public class CountWords {
         List<String> wordsLongerThan5 = countWordsLongerThan5Characters(words);
 
 
-        System.out.println(wordsWithM);
-        System.out.println(wordsLongerThan5);
+        System.out.println("Number of words that start with M or m = " + wordsWithM);
+        System.out.println("Words longer than 5 characters = " + wordsLongerThan5);
     }
 }
