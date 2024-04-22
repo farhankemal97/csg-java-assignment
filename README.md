@@ -11,5 +11,11 @@ Java project called Count Words that processes a List of String applying these b
     ```sh
     java CountWords.java
     ```  
-* Can change the input from the code at src\com\csg\CountWords.java line 31  
+* Can change the input from the code at src\com\csg\CountWords.java line 31
+
+## Notes for accommodating frequently changing business rules  
+To account for changing business rules and accommodating new ones, we design Count Words program with flexibility and extensibility. There are some strategies to handle this case:
+* *Modular Design*: Separate different functionalities into individual methods or classes.
+* *Test-Driven Development*: Implement unit test for each rule and ensure them to pass the test before integrating into the main codebase.
+* *Documentation*: Document the purpose and behaviour of each rule. 
 
